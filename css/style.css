@@ -1,0 +1,240 @@
+/* Website styles from Yohan Jo http://www.cs.cmu.edu/~yohanj/*/
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12pt;
+	font-family: Nunito;/*Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; /*#'Lato', sans-serif;*/
+	font-weight: 100;
+	line-height: 150%;
+	/*background: #f3f3f3;
+	color:#555;*/
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+p.bigskip {
+	margin: 20px 0;
+}
+
+a {
+	/*color: darkblue;*/
+	color: inherit;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: darkblue;*/
+}
+
+a:hover {
+	color: crimson;
+	text-decoration: underline;
+}
+
+b {
+	font-weight: bold;
+}
+
+h1 {
+	font-family: Nunito;/*Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; /*#'Lato', sans-serif;*/
+	font-weight: 200;
+	font-size: 26pt;
+}
+
+h2 {
+	font-family: Nunito;/*Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;/*'Lato', sans-serif;*/
+	color: #333;
+	font-size: 20pt;
+	font-weight: 200;
+	/*font-variant: small-caps;*/
+}
+
+ul {
+	/*list-style: none;*/
+	margin: 0;
+}
+
+ul.bullet {
+	list-style-type: circle;
+}
+
+li {
+	margin-bottom: 3px;
+	line-height: 130%;
+}
+
+ul li {
+	margin-top: 6px;
+}
+
+ul li ul {
+	margin-top: 5px;
+}
+
+ul li ul li {
+	margin-top: 2px;
+}
+
+ol li {
+	margin-bottom: 10px;
+}
+
+#wrap {
+	max-width: 900px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#photo {
+	float: left;
+	width: 220px;
+	padding-left: 40px;
+}
+
+#logophoto {
+        float: right;
+        width: 220px;
+        padding-right: 20px;
+}
+
+#logophoto img {
+        width: 200px;
+        height: auto;
+}
+
+#photo img {
+	width: 200px;
+	height: audo; 
+	/*border-radius: 50%;*/
+}
+
+#profile {
+	min-height: 220px;
+	font-size: 12pt;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+#menu {
+	display: table;
+	width: 100%;
+	margin-bottom: 30px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
+#menu div {
+	display: table-cell;
+	width: 25%;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 500;
+	color: #333;
+}
+
+#menu div:hover {
+	background: #cdcdcd;
+}
+
+#menu .now {
+	background: #e0e0e0;
+	color: crimson;
+}
+
+#menu a {
+	display: block;
+	padding: 5px 0 5px 0;
+	color: inherit;
+}
+
+#menu a:hover {
+	text-decoration: none;
+}
+
+#logos {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#logos img {
+	margin: 0 35px;
+	vertical-align: middle;
+}
+
+#footer {
+	text-align: right;
+	color: gray;
+}
+
+
+.section {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+.section p {
+	text-align: justify;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.date {
+	margin-left: 10px;
+	font-size: 10pt;
+	font-weight: 300;
+	color: #333;
+	vertical-align: top;
+}
+
+.paper_title {
+	font-family: Nunito; /*Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; /*'Lato', sans-serif;*/
+	font-weight: 800;
+	line-height: 140%;
+}
+
+.paper_title .link {
+	color: 666;
+	font-weight: 300;
+	font-size: 9pt;
+}
+
+.paper_authors {
+	font-family: Nunito; /*Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; /*'Lato', sans-serif;*/
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.paper_authors .me {
+	color: crimson;
+	/*color: #AF1E2D;*/
+	font-weight: 500;
+}
+
+.paper_venue {
+	font-family: Nunito; /*Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; /*'Lato', sans-serif;*/
+	font-weight: 300;
+	line-height: 140%;
+	/*font-style: italic;*/
+}
+
+.paper_title img {
+	margin-top: 0.5pt;
+	height:10.5pt;
+}
+
+.hide {
+	display: none;
+}
+
+.emph {
+	color: crimson;
+	}
