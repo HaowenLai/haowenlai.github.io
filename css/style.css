@@ -222,10 +222,10 @@ ol li {
 }
 
 .paper_venue {
-	font-family: Nunito; /*Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; /*'Lato', sans-serif;*/
+	font-family: Palatino; /*Nunito Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; /*'Lato', sans-serif;*/
 	font-weight: 300;
 	line-height: 140%;
-	/*font-style: italic;*/
+	font-style: italic;
 }
 
 .paper_title img {
@@ -275,4 +275,15 @@ ol li {
 }
 /* --------- End only for Research page  -------- */
 
+
+/* ------- only for publication page ---------  */
+.project_abs pre{
+	font-size:12pt;
+	line-height:18px;
+	text-align: justify;
+	margin-left: 0;
+	margin-right:0;
+	margin-bottom:10px;
+}
+/* --------- End only for Research page  -------- */
 

@@ -9,6 +9,7 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="css/hidebib.js" type="text/javascript"></script>
 		<!--[if !IE]>-->
 		<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/iphone.css" >
 		<link rel="stylesheet" type="text/css" href="css/css_002.css" >
@@ -40,11 +41,53 @@
 	</div>
 	<!-- end of memu --> 
 	
-	<h2>under construction 3</h2>
+	<div id="publications" class="section">
+	<h2>Publications</h2>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" align="center"><tbody>
+      <tr>
+      	<td width="30%" valign="top" align="center">
+          		<img src="images/paper_meterReader.png" alt="paper_meter_reader" style="border-style: none"  width="90%">
+          	</td>
+		<td width="70%" valign="top">
+			<b>A Novel Scale Recognition Method for Pointer Meters Adapted to Different Types and Shapes</b>
+			<br><span class="emph">Haowen Lai</span>, Qi Kang, Le Pan, Can Cui
+			<br>(CASE) <span class="paper_venue">IEEE International Conference on Automation Science and Engineering, 2019</span><br>
+			<div class="project_link" id="paperMeterReader">
+				[<a href="docs/Lai_CASE19.pdf">pdf</a>] 
+				[<a href="javascript:toggleblock('paperMeterReader_abs')">abstract</a>] 
+				[<a class="togglebib" href="javascript:toggleblock('paperMeterReader_bib')">bibtex</a>] 
+				[<a href="docs/Lai_CASE19_slides.pdf">slides</a>]
+			</div><br>
+			<div class="project_abs"><p id="paperMeterReader_abs" style="display: none;">
+				Nowadays plenty of pointer meters are used in the field of chemical industry and electrical power system. To avoid 
+				reading their indication manually, many algorithms based on computer vision have been proposed to read pointer meters 
+				automatically. These methods, however, are limited to meters whose scales are uniform, and their accuracy is vulnerable to 
+				the error in the recognition of a meter’s center. In this paper, a novel automatic reading algorithm of pointer meters based on 
+				scale seeking is proposed to overcome the weaknesses of the existing methods. Differing from the popular angle-based 
+				methods, we obtain the indication of the meter by comparing the distances between the peak of pointer and its nearest scales. The 
+				position and values of all scales can be automatically acquired and inferred by using our scale seeking and value inference 
+				algorithms, which is independent of any prior information in a database. Experiments prove that the algorithm can be applied 
+				to both meters with uniform or non-uniform scales effectively.
+			</p>
+			<pre id="paperMeterReader_bib" xml:space="preserve" style="display: none;">@INPROCEEDINGS{2019case,
+author = {H. {Lai} and Q. {Kang} and L. {Pan} and C. {Cui}},
+booktitle = {2019 IEEE 15th International Conference on 
+             Automation Science and Engineering (CASE)}, 
+title = {A Novel Scale Recognition Method for Pointer 
+         Meters Adapted to Different Types and Shapes}, 
+year = {2019}
+}
+			</pre></div>
+		</td>
+	</tr>
+      
+      
+	</tbody></table>
+	</div>  
+	<!-- end div of projects --> 
 	
 	
 </div>  <!-- end div wrap   -->
-
 
 
 </body></html>
