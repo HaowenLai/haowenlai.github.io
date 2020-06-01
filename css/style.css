@@ -190,7 +190,7 @@ ol li {
 }
 
 .date {
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 	font-size: 10pt;
 	font-weight: 300;
 	color: #333;
@@ -251,3 +251,28 @@ ol li {
 	margin-top: 6px;
 	line-height: 130%;
 }
+
+/* ------- only for Research page ---------  */
+.project_link a{
+	color: #1772d0;
+	text-decoration:none;
+}
+
+.project_link a:hover {
+	color: #f09228;
+	text-decoration:none;
+}
+
+.project_abs p{
+	text-align: justify;
+	margin-left: 0;
+	margin-right:0;
+	margin-bottom:10px;
+}
+
+#projects table{
+	padding-left: 40px;
+}
+/* --------- End only for Research page  -------- */
+
+
