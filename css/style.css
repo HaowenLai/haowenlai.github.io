@@ -252,7 +252,7 @@ ol li {
 	line-height: 130%;
 }
 
-/* ------- only for Research page ---------  */
+/* ------- only for Research and publication page ---------  */
 .project_link a{
 	color: #1772d0;
 	text-decoration:none;
@@ -273,10 +273,7 @@ ol li {
 #projects table{
 	padding-left: 40px;
 }
-/* --------- End only for Research page  -------- */
 
-
-/* ------- only for publication page ---------  */
 .project_abs pre{
 	font-size:12pt;
 	line-height:18px;
@@ -285,5 +282,6 @@ ol li {
 	margin-right:0;
 	margin-bottom:10px;
 }
-/* --------- End only for Research page  -------- */
+/* --------- End only for Research and publication page  -------- */
+
 
