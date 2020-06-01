@@ -1,0 +1,3 @@
+# Disallow all robots (web spider) for this website
+User-agent: *
+Disallow: /
