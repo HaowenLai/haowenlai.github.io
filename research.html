@@ -54,9 +54,12 @@
 			<br><span class="date">Nov. 2018 - Aug. 2019</span><br>
 			<div class="project_link" id="projMeterReader">[<a href="publications.html">pub</a>] [<a href="javascript:toggleblock('projMeterReader_abs')">abstract</a>]</div><br>
 			<div class="project_abs"><p id="projMeterReader_abs" style="display: none;">
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
+				This project aims to build an automatic reading system for pointer meters. The system is comprehensive, including image capture device, core reading algorithm and reading 
+				management GUI. Unlike other reading systems, the core reading algorithm applied in ours was proposed by our team (see [<a href="publications.html">pub</a>]), which is able 
+				to process both uniform and non-uniform scale meters (meters whose scales are unevenly distributed) regardless of their shapes. This ability undoubtedly enlarges the range of 
+				meters in application. In some circumstances such as power plant, it is even critical because most of their meters are of non-uniform scales, e.g. power factor meter and large 
+				measurement Ampere meter. Images are captured by an self-designed embedded device and transmitted through wireless network. Besides, reading management GUI is also provided 
+				for monitoring, recording and controlling the whole system.
 			</p></div>
 		</td>
 	</tr>
@@ -71,9 +74,11 @@
 			<br><span class="date">Sept. 2018 - Jan. 2019</span><br>
 			<div class="project_link" id="projRubikCube">[<a href="https://github.com/HaowenLai/rubikCube">code</a>] [<a href="javascript:toggleblock('projRubikCube_abs')">abstract</a>]</div><br>
 			<div class="project_abs"><p id="projRubikCube_abs" style="display: none;">
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
+				In this project, we made a robot (though it could not walk or move) that can restore 3-order Rubik's Cube and is robust to the enviromental illumination changes. Its robustness results from 
+				the color recognition algorithm that differs from traditional ones which simply apply threshold to HSV color space to segment color. The problem is that a fixed threshold cannot handle 
+				various illumination conditions. To overcome the weakness, we apply machine learning techniques to enable the robot to learn the threshold according to its current enviroment. That improves 
+				its adaptability and makes user get rid of parameters tuning all the time. Besides, the controlling sequence to the motors for restoration is also optimized, e.g. the opposite motors can move 
+				at the same time without conflict, thus shortening the time used.
 			</p></div>
 		</td>
 	</tr>
@@ -88,9 +93,11 @@
 			<br><span class="date">Jan. 2018 - Aug. 2018</span><br>
 			<div class="project_link" id="projRobotArm">[<a href="https://github.com/HaowenLai/RobotArm1">code</a>] [<a href="javascript:toggleblock('projRobotArm_abs')">abstract</a>]</div><br>
 			<div class="project_abs"><p id="projRobotArm_abs" style="display: none;">
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
+				We presented a robot arm system for grabbing and classification in this project. As we know, for most control algorithms of robot arms, models need to be built before the arms can precisely 
+				move to a certain position. It is not an easy job especially when your robot arms are of different types. Even for the same type, it is hard to acquire an accurate model due to the manufacturing 
+				errors. So we use deep learning to make the arm learn the model by itself through practicing. The location of its joints acquired by the visual positioning module is used as training samples 
+				together with the control values of each motors. To Illustrate the adaptability and effectiveness of our approach, the algorithm is applied to two different robot arms for grabbing and classification 
+				tasks through collaboration. If the classification features are blocked by the clip of one arm when holding the object, the arm will pass it to another and let it observes the features.
 			</p></div>
 		</td>
 	</tr>
@@ -105,9 +112,12 @@
 			<br><span class="date">Apr. 2017 - Apr. 2018</span><br>
 			<div class="project_link" id="projSelfieDrone">[<a href="javascript:toggleblock('projSelfieDrone_abs')">abstract</a>]</div><br>
 			<div class="project_abs"><p id="projSelfieDrone_abs" style="display: none;">
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
-				Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line. Here is an example test line.
+				This project focused on how to provide convenient UAV control and better user experience in selfie. In our research, the remote controller 
+				is discarded. Instead, users control the UAV for a certain task such as stopping following, resuming and landing through hand gestures. 
+				The gesture recognition module first segments hand area by color feature, then uses neural network to infer its meaning. The segmentation procedure 
+				dramatically reduces the time compared to using CNN to infer on a 3-channals color image directly, and requires less training samples. 
+				Another distinguishing characteristic is that our UAV utilizes a depth camera to locate the user and will automatically follow the person when moving, with 
+				no worry of getting lost. Other functions include automatic finding best selfie position, group shots and video recording, etc.
 			</p></div>
 		</td>
 	</tr>
