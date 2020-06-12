@@ -97,6 +97,12 @@ ol li {
 	padding-left: 40px;
 }
 
+#photo img {
+	width: 260px;
+	height: audo; 
+	/*border-radius: 50%;*/
+}
+
 #logophoto {
         float: right;
         width: 220px;
@@ -106,12 +112,6 @@ ol li {
 #logophoto img {
         width: 200px;
         height: auto;
-}
-
-#photo img {
-	width: 200px;
-	height: audo; 
-	/*border-radius: 50%;*/
 }
 
 #profile {
