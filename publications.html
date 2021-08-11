@@ -43,33 +43,59 @@
 	
 	<div id="publications" class="section">
 	<h2>Publications</h2>
-      <table width="100%" cellspacing="0" cellpadding="10" border="0" align="center"><tbody>
-            <tr>
+    <table width="100%" cellspacing="0" cellpadding="10" border="0" align="center"><tbody>
+    <tr>
+      	<td width="30%" valign="top" align="center">
+          		<img src="images/paper_MultiplayerGuaranteed.png" alt="paper_Multiplayer_Guaranteed" style="border-style: none"  width="80%" >
+          	</td>
+		<td width="70%" valign="top">
+			<span class="anchor"><a name="paperTAC2021"><b>Multiplayer Homicidal Chauffeur Reach-Avoid Games via Guaranteed Winning Strategies</b></a></span>
+			<br>Rui Yan, Ruiliang Deng, <u><i>Haowen Lai</i></u>,  Weixian Zhang, Zongying Shi, Yisheng Zhong
+			<br>(TAC) <span class="paper_venue">IEEE Transactions on Automatic Control</span> (Under Review)<br>
+			<div class="project_link" id="paperMultiplayerGuaranteed">
+				[<a href="javascript:toggleblock('paperMultiplayerGuaranteed_abs')">abstract</a>] 
+			</div><br>
+			<div class="project_abs"><p id="paperMultiplayerGuaranteed_abs" style="display: none;">
+				Abstract will be available after being accepted.
+			</p></div>
+		</td>
+	</tr>
+
+	<tr>
       	<td width="30%" valign="top" align="center">
           		<img src="images/paper_ReachAvoid.png" alt="paper_Reach_Avoid" style="border-style: none"  width="80%" >
           	</td>
 		<td width="70%" valign="top">
 			<span class="anchor"><a name="paperCDC2021"><b>Reach-Avoid Differential Games via Finite-Time Heading Tracking</b></a></span>
 			<br><u><i>Haowen Lai</i></u>, Rui Yan, Weixian Zhang, Zongying Shi, Yisheng Zhong
-			<br>(CDC) <span class="paper_venue">IEEE Conference on Decision and Control, 2021</span> (Under Review)<br>
+			<br>(CDC) <span class="paper_venue">IEEE Conference on Decision and Control, 2021</span> (Accepted)<br>
 			<div class="project_link" id="paperReachAvoid">
 				[<a href="javascript:toggleblock('paperReachAvoid_abs')">abstract</a>] 
 			</div><br>
 			<div class="project_abs"><p id="paperReachAvoid_abs" style="display: none;">
-				Abstract will be available after being accepted.
+				This paper considers a one-defender-one-attacker reach-avoid differential game (DG) in the plane which is split by a 
+				straight line into a goal region and a play region. The attacker aims at entering the goal region from the play region 
+				without being captured, while the defender tries to capture the attacker in the play region. We focus on the defense 
+				problem where the defender is a Dubins car and the attacker is a simple-motion model. First, a controller is proposed 
+				for the defender to track a reference heading which is derived from an evasion space (ES)-based defense strategy. 
+				Then,  an upper bound for the time derivative of the reference heading is computed. Based on it, we show that the 
+				defender can succeed to track the reference heading within a finite time. Finally,  both simulation and experiment 
+				examples are provided, where a vision-based re-localization method is used for the experiment to deal with the 
+				coordinate inconsistency problem. 
 			</p></div>
 		</td>
 	</tr>
       
-      <tr>
+    <tr>
       	<td width="30%" valign="top" align="center">
           		<img src="images/paper_LidarPerception.png" alt="paper_Lidar_Perception" style="border-style: none"  width="90%" >
           	</td>
 		<td width="70%" valign="top">
 			<span class="anchor"><a name="paperCCC2021"><b>LiDAR-Inertial based Localization and Perception for Indoor Pursuit-Evasion Differential Games</b></a></span>
 			<br><u><i>Haowen Lai</i></u>, Wenhao Liang, Rui Yan, Zongying Shi, Yisheng Zhong
-			<br>(CCC) <span class="paper_venue">IEEE Chinese Control Conference, 2021</span> (Accepted)<br>
+			<br>(CCC) <span class="paper_venue">IEEE Chinese Control Conference, 2021</span><br>
 			<div class="project_link" id="paperLidarPerception">
+				[<a href="docs/Lai_CCC21.pdf">pdf</a>] 
 				[<a href="javascript:toggleblock('paperLidarPerception_abs')">abstract</a>] 
 			</div><br>
 			<div class="project_abs"><p id="paperLidarPerception_abs" style="display: none;">
@@ -86,7 +112,7 @@
 		</td>
 	</tr>
       
-      <tr>
+    <tr>
       	<td width="30%" valign="top" align="center">
           		<img src="images/paper_meterReader.png" alt="paper_meter_reader" style="border-style: none"  width="90%">
           	</td>
@@ -111,15 +137,16 @@
 				algorithms, which is independent of any prior information in a database. Experiments prove that the algorithm can be applied 
 				to both meters with uniform or non-uniform scales effectively.
 			</p>
-			<pre id="paperMeterReader_bib" xml:space="preserve" style="display: none;">@INPROCEEDINGS{2019case,
-author = {H. {Lai} and Q. {Kang} and L. {Pan} and C. {Cui}},
-booktitle = {2019 IEEE 15th International Conference on 
-             Automation Science and Engineering (CASE)}, 
-title = {A Novel Scale Recognition Method for Pointer 
-         Meters Adapted to Different Types and Shapes}, 
-year = {2019}, 
-pages={374-379}, 
-doi={10.1109/COASE.2019.8843107}
+			<pre id="paperMeterReader_bib" xml:space="preserve" style="display: none;">@INPROCEEDINGS{lai2019novel,
+  author = {H. {Lai} and Q. {Kang} and L. {Pan} and C. {Cui}},
+  booktitle = {2019 IEEE 15th International Conference on 
+               Automation Science and Engineering (CASE)}, 
+  title = {A Novel Scale Recognition Method for Pointer 
+           Meters Adapted to Different Types and Shapes}, 
+  year = {2019}, 
+  pages={374-379}, 
+  organization={IEEE}, 
+  doi={10.1109/COASE.2019.8843107}
 }
 			</pre></div>
 		</td>
@@ -134,6 +161,16 @@ doi={10.1109/COASE.2019.8843107}
 	<div id="patents" class="section">
 		<h2>Patents</h2><ol>
 		<li>
+			<span class="anchor"><a name="patent2021"><b>A Map Construction Method and a LiDAR-inertial Odometry</b></a></span>
+			<br><u><i>Haowen Lai</u></i>, Xiaoxu Jiang
+			<br><span class="paper_venue">China Patent Application 202110618535.5, filed Jun. 2021. Patent Pending.</span>
+		</li>
+		<li>
+			<b>Registration Method based on CNN Point Cloud Object Detection</b>
+			<br>Bo Wen, Jian Zhang, Shuang Liang, Tianyi Lu, Qi Xiong, Xiaoxu Jiang, <u><i>Haowen Lai</u></i>
+			<br><span class="paper_venue">China Patent Application 202011545903.X, filed Dec. 2020. Patent Pending.</span>
+		</li>
+		<li>
 			<span class="anchor"><a name="patent2019"><b>Automatic Reading Method for Pointer Meters based on Scale Seeking</b></a></span>
 			<br>Qi Kang, <u><i>Haowen Lai</u></i>
 			<br><span class="paper_venue">China Patent Application 201910266384.4, filed Jul. 2019. Patent Authorized.</span>
@@ -141,7 +178,7 @@ doi={10.1109/COASE.2019.8843107}
 		<li>
 			<span class="anchor"><a name="patent2018"><b>Method and System for Robot Arm Controlling based on Deep Learning</b></a></span>
 			<br><u><i>Haowen Lai</u></i>, et al.
-			<br><span class="paper_venue">China Patent Application 201811198158.9, filed Oct. 2018. Patent Pending.</span>
+			<br><span class="paper_venue">China Patent Application 201811198158.9, filed Oct. 2018. Patent Authorized.</span>
 		</li>
 		<li>
 			<b>Method and System for Camera Calibration based on Deep Learning</b>
