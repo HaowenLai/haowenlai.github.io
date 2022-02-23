@@ -288,7 +288,11 @@ ol li {
 	color: inherit;
 	text-decoration: none;
 }
-
 /* --------- End only for Research and publication page  -------- */
 
-
+/* ------- only for Home page ---------  */
+.pronunciation{
+	font-family:"Arial";
+	font-size:11.5pt;
+}
+/* ------- End only for Home page ---------  */

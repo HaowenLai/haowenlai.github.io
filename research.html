@@ -44,17 +44,39 @@
 	<div id="projects" class="section">
 	<h2>Projects</h2>
       <table width="100%" cellspacing="0" cellpadding="10" border="0" align="center"><tbody>
-            <tr>
+	<tr>
+      	<td width="30%" valign="top" align="center">
+          		<img src="images/proj_mapMerge.png" alt="proj_mapMerge" style="border-style: none"  width="90%">
+          	</td>
+		<td width="70%" valign="top">
+			<b>AutoMerge: Automatic Multi-agent Cooperated Map Merging System</b>
+			<br><a href="http://theairlab.org">AirLab</a>, Carnegie Mellon University
+			<br>(as <u><i>Research Intern</i></u>, advisor: prof. <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/">Sebastian Scherer</a>)
+			<br><span class="date">Dec. 2021 - present</span><br>
+			<div class="project_link" id="projMapMerge">[<a href="javascript:toggleblock('projMapMerge_abs')">abstract</a>]</div><br>
+			<div class="project_abs"><p id="projMapMerge_abs" style="display: none;">
+				The project focuses on merging large-scale 3D point cloud maps without any prior information about their relative 
+				transformation. These large-scale point clouds, which are usually generated using SLAM with 3D LiDARs in the outdoors, differ 
+				a lot from the ones created by 3D scanners or RGB-D cameras. The noise becomes larger and the points are sparser, making 
+				most descriptors designed for point cloud registration fail. Furthermore, the issue of time consumption must be taken into 
+				consideration as the scale of maps becomes increasingly larger. To handle it, we propose a novel method that selects key points
+				at a higher sematic level rather than choose them randomly as most current works do. Then features are extracted and 
+				descriptors are constructed by taking their neighbors into account. For details, please refer to our paper.
+			</p></div>
+		</td>
+	</tr>
+	
+	<tr>
       	<td width="30%" valign="top" align="center">
           		<img src="images/proj_LocPercep.png" alt="proj_LocPercep" style="border-style: none"  width="90%">
           	</td>
 		<td width="70%" valign="top">
 			<b>LiDAR Inertial based Self-Localization and Target Perception for Robots</b>
-			<br>Tsinghua UAV Lab (as <u><i>researcher</i></u>, advisor: prof. Yisheng Zhong)
+			<br>UAV Lab, Tsinghua University (as <u><i>researcher</i></u>, advisor: prof. Yisheng Zhong)
 			<br><span class="date">Jan. 2021 - Jul. 2021</span><br>
 			<div class="project_link" id="projLocPercep">[<a href="javascript:toggleblock('projLocPercep_abs')">abstract</a>]
 			                                                                      [<a href="publications.html#paperCCC2021">paper</a>]
-																				[<a href="publications.html#patent2021">patent</a>]</div><br>
+														[<a href="publications.html#patent2021">patent</a>]</div><br>
 			<div class="project_abs"><p id="projLocPercep_abs" style="display: none;">
 				The abilities of self-localization and target perception for robots are of vital importance since they are the basic of other 
 				upper level functions, such as path planning, obstacle avoidance and navigation. Although some methods can provide 
@@ -71,32 +93,11 @@
       
       <tr>
       	<td width="30%" valign="top" align="center">
-          		<img src="images/proj_mapMerge.png" alt="proj_mapMerge" style="border-style: none"  width="90%">
-          	</td>
-		<td width="70%" valign="top">
-			<b>Large-scale 3D Map Fusion with No Prior Transformation</b>
-			<br>Tsinghua UAV Lab (as <u><i>researcher</i></u>, advisor: prof. Yisheng Zhong)
-			<br><span class="date">Nov. 2020 - present</span><br>
-			<div class="project_link" id="projMapMerge">[<a href="javascript:toggleblock('projMapMerge_abs')">abstract</a>]</div><br>
-			<div class="project_abs"><p id="projMapMerge_abs" style="display: none;">
-				The project focuses on merging large-scale 3D point cloud maps without any prior information about their relative 
-				transformation. These large-scale point clouds, which are usually generated using SLAM with 3D LiDARs in the outdoors, differ 
-				a lot from the ones created by 3D scanners or RGB-D cameras. The noise becomes larger and the points are sparser, making 
-				most descriptors designed for point cloud registration fail. Furthermore, the issue of time consumption must be taken into 
-				consideration as the scale of maps becomes increasingly larger. To handle it, we propose a novel method that selects key points
-				at a higher sematic level rather than choose them randomly as most current works do. Then features are extracted and 
-				descriptors are constructed by taking their neighbors into account. For details, please refer to our paper.
-			</p></div>
-		</td>
-	</tr>
-      
-      <tr>
-      	<td width="30%" valign="top" align="center">
           		<img src="images/proj_SLAM_mapping.png" alt="project_SLAM_mapping" style="border-style: none"  width="90%">
           	</td>
 		<td width="70%" valign="top">
 			<b>Intelligent and Unmanned Indoor Navigation Robot</b>
-			<br>Tsinghua UAV Lab (as <u><i>researcher</i></u>, advisor: prof. Yisheng Zhong)
+			<br>UAV Lab, Tsinghua University (as <u><i>researcher</i></u>, advisor: prof. Yisheng Zhong)
 			<br><span class="date">Jan. 2020 - Sept. 2020</span><br>
 			<div class="project_link" id="projSLAMMapping">[<a href="javascript:toggleblock('projSLAMMapping_abs')">abstract</a>]
 			                                                                             [<a href="publications.html#paperCDC2021">paper</a>]</div><br>
@@ -114,18 +115,18 @@
           		<img src="images/proj_meterReader.png" alt="project_meter_reader" style="border-style: none"  width="90%">
           	</td>
 		<td width="70%" valign="top">
-			<b>Automatic Reading System for Pointer Meters</b>
-			<br><a href="https://github.com/Tongji-BitaAI-Lab">Tongji BitaAI Lab</a> (as <u><i>main researcher</i></u>, advisor: prof. Qi Kang)
+			<b>Vision-based Automatic Reading System for Pointer Meters</b>
+			<br><a href="https://github.com/Tongji-BitaAI-Lab">BitaAI Lab, Tongji University</a> (as <u><i>main researcher</i></u>, advisor: prof. Qi Kang)
 			<br><span class="date">Nov. 2018 - Aug. 2019</span><br>
 			<div class="project_link" id="projMeterReader">[<a href="javascript:toggleblock('projMeterReader_abs')">abstract</a>]
 													           [<a href="publications.html#paper2019">paper</a>] 
 														    [<a href="publications.html#patent2019">patent</a>]</div><br>
 			<div class="project_abs"><p id="projMeterReader_abs" style="display: none;">
-				This project aims to build an automatic reading system for pointer meters. The system is comprehensive, including image capture device, core reading algorithm and reading 
-				management GUI. Unlike other reading systems, the core reading algorithm applied in ours was proposed by our team (see [<a href="publications.html">pub</a>]), which is able 
-				to process both uniform and non-uniform scale meters (meters whose scales are unevenly distributed) regardless of their shapes. This ability undoubtedly enlarges the range of 
-				meters in application. In some circumstances such as power plant, it is even critical because most of their meters are of non-uniform scales, e.g. power factor meter and large 
-				measurement Ampere meter. Images are captured by an self-designed embedded device and transmitted through wireless network. Besides, reading management GUI is also provided 
+				This project aims to build an automatic reading system for pointer meters. The system is comprehensive, including image capture device, core reading algorithm and reading
+				management GUI. Unlike other reading systems, the core reading algorithm applied in ours was proposed by our team (see [<a href="publications.html">pub</a>]), which is able
+				to process both uniform and non-uniform scale meters (meters whose scales are unevenly distributed) regardless of their shapes. This ability undoubtedly enlarges the range of
+				meters in application. In some circumstances such as power plant, it is even critical because most of their meters are of non-uniform scales, e.g. power factor meter and large
+				measurement Ampere meter. Images are captured by an self-designed embedded device and transmitted through wireless network. Besides, reading management GUI is also provided
 				for monitoring, recording and controlling the whole system.
 			</p></div>
 		</td>
@@ -158,6 +159,7 @@
 		<td width="70%" valign="top">
 			<b>Self-Learning Model-Free Robot Arm System for Grabbing and Classification</b>
 			<br>Innovation Base Laboratory (as <u><i>main researcher</i></u> and <u><i>team leader</i></u>)
+			<br>Competition: Intel Cup ESDC 2018. National first prize (top 8% of 164 teams).
 			<br><span class="date">Jan. 2018 - Aug. 2018</span><br>
 			<div class="project_link" id="projRobotArm">[<a href="javascript:toggleblock('projRobotArm_abs')">abstract</a>] 
 															[<a href="https://github.com/HaowenLai/RobotArm1">code</a>] 
@@ -178,7 +180,7 @@
           	</td>
 		<td width="70%" valign="top">
 			<b>Follow You up: Selfie UAV with Gesture Interaction</b>
-			<br><u><i>Haowen Lai</i></u>, Ji Jiang, Shiyu Tong (advisor: prof. Fanhuai Shi)
+			<br>National Innovation Project (as <u><i>team leader</i></u>, advisor: prof. Fanhuai Shi)
 			<br><span class="date">Apr. 2017 - Apr. 2018</span><br>
 			<div class="project_link" id="projSelfieDrone">[<a href="javascript:toggleblock('projSelfieDrone_abs')">abstract</a>]</div><br>
 			<div class="project_abs"><p id="projSelfieDrone_abs" style="display: none;">
