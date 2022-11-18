@@ -44,17 +44,61 @@
 	<div id="publications" class="section">
 	<h2>Publications</h2>
     <table width="100%" cellspacing="0" cellpadding="10" border="0" align="center"><tbody>
-    <tr>
+    
+	<tr>
+      	<td width="30%" valign="top" align="center">
+          		<img src="images/paper_automerge.png" alt="paper_Automerge" style="border-style: none"  width="80%" >
+          	</td>
+		<td width="70%" valign="top">
+			<span class="anchor"><a name="paperAutomerge"></a><b>Automerge: A framework for map assembling and smoothing in city-scale environments</b></span>
+			<br>Peng Yin, <b><u>Haowen Lai</u></b>*, Shiqi Zhao*, Ruijie Fu, Ivan Cisneros, Ruohai Ge, Ji Zhang, Howie Choset and Sebastian Scherer
+			<br>(T-RO 2022) <span class="paper_venue">IEEE Transactions on Robotics</span> (Under Review)<br>
+			<div class="project_link">
+				[<a href="https://arxiv.org/abs/2207.06965" target="_blank">pdf</a>] 
+				[<a href="https://github.com/MetaSLAM/AutoMerge_Server" target="_blank">code</a>] 
+				[<a href="javascript:toggleblock('paperYin2022Automerge_abs')">abstract</a>]
+				[<a class="togglebib" href="javascript:toggleblock('paperYin2022Automerge_bib')">bibtex</a>]
+			</div><br>
+			<div class="project_abs"><p id="paperYin2022Automerge_abs" style="display: none;">
+				We present AutoMerge, a LiDAR data processing framework for assembling a large number of map segments into a
+				complete map. Traditional large-scale map merging methods are fragile to incorrect data associations, and are
+				primarily limited to working only offline. AutoMerge utilizes multi-perspective fusion and adaptive loop 
+				closure detection for accurate data associations, and it uses incremental merging to assemble large maps from
+				individual trajectory segments given in random order and with no initial estimations. Furthermore, after 
+				assembling the segments, AutoMerge performs fine matching and pose-graph optimization to globally smooth the 
+				merged map. We demonstrate AutoMerge on both city-scale merging (120km) and campus-scale repeated merging 
+				(4.5km x 8). The experiments show that AutoMerge (i) surpasses the second- and third- best methods by 14% and
+				24% recall in segment retrieval, (ii) achieves comparable 3D mapping accuracy for 120 km large-scale map assembly,
+				(iii) and it is robust to temporally-spaced revisits. To the best of our knowledge, AutoMerge is the first 
+				mapping approach that can merge hundreds of kilometers of individual segments without the aid of GPS.
+			</p>
+			<pre id="paperYin2022Automerge_bib" xml:space="preserve" style="display: none;">@article{yin2022automerge,
+  title={Automerge: A framework for map assembling
+  	 and smoothing in city-scale environments},
+  author={Yin, Peng and Lai, Haowen and Zhao, Shiqi
+	 and Fu, Ruijie and Cisneros, Ivan and Ge, Ruohai
+	 and Zhang, Ji and Choset, Howie
+	 and Scherer, Sebastian},
+  journal={arXiv preprint arXiv:2207.06965},
+  year={2022}
+}
+			</pre></div>
+		</td>
+    </tr>
+	
+	<tr>
       	<td width="30%" valign="top" align="center">
           		<img src="images/paper_lai2021adafusion.png" alt="paper_AdaFusion" style="border-style: none"  width="80%" >
           	</td>
 		<td width="70%" valign="top">
 			<span class="anchor"><b>AdaFusion: Visual-LiDAR Fusion with Adaptive Weights for Place Recognition</b></span>
-			<br><u><i>Haowen Lai</i></u>,  Peng Yin, Sebastian Scherer
-			<br>(TIE) <span class="paper_venue">IEEE Transactions on Industrial Electronics</span> (Under Review)<br>
-			<div class="project_link" id="paperLai2021adafusion">
-				[<a href="https://arxiv.org/abs/2111.11739" target="_blank">pdf</a>] 
-				[<a href="javascript:toggleblock('paperLai2021adafusion_abs')">abstract</a>] 
+			<br><b><u>Haowen Lai</u></b>,  Peng Yin, Sebastian Scherer
+			<br>(RA-L 2022) <span class="paper_venue">IEEE Robotics and Automation Letters</span><br>
+			<div class="project_link">
+				[<a href="https://ieeexplore.ieee.org/abstract/document/9905898" target="_blank">pdf</a>] 
+				[<a href="https://github.com/MetaSLAM/AdaFusion" target="_blank">code</a>] 
+				[<a href="javascript:toggleblock('paperLai2021adafusion_abs')">abstract</a>]
+				[<a class="togglebib" href="javascript:toggleblock('paperLai2021adafusion_bib')">bibtex</a>]
 			</div><br>
 			<div class="project_abs"><p id="paperLai2021adafusion_abs" style="display: none;">
 				Recent years have witnessed the increasing application of place recognition in various environments, 
@@ -69,9 +113,63 @@
 				to better utilize the potential relationship between images and point clouds, we design a twostage fusion approach 
 				to combine the 2D and 3D attention. Our work is tested on two public datasets, and experiments show that 
 				the adaptive weights help improve recognition accuracy and system robustness to varying environments. 
-			</p></div>
+			</p>
+			<pre id="paperLai2021adafusion_bib" xml:space="preserve" style="display: none;">@article{lai2022adafusion,
+  title={Adafusion: Visual-lidar fusion with adaptive
+	 weights for place recognition},
+  author={Lai, Haowen and Yin, Peng and Scherer, Sebastian},
+  journal={IEEE Robotics and Automation Letters},
+  volume={7},
+  number={4},
+  pages={12038--12045},
+  year={2022},
+  publisher={IEEE}
+}
+			</pre></div>
 		</td>
     </tr>
+
+	<tr>
+		<td width="30%" valign="top" align="center">
+				<img src="images/paper_ccc2022.png" alt="paper_CCC2022" style="border-style: none"  width="80%" >
+			</td>
+		<td width="70%" valign="top">
+			<span class="anchor"><b>Global Registration of Point Cloud Maps with Low-overlap Regions</b></span>
+			<br>Wenhao Liang, <b><u>Haowen Lai</u></b>, Zongying Shi, Yisheng Zhong
+			<br>(CCC 2022) <span class="paper_venue">IEEE Chinese Control Conference</span><br>
+			<div class="project_link">
+				[<a href="https://ieeexplore.ieee.org/abstract/document/9902253" target="_blank">pdf</a>] 
+				[<a href="javascript:toggleblock('paperLiangCCC2022_abs')">abstract</a>]
+				[<a class="togglebib" href="javascript:toggleblock('paperLiangCCC2022_bib')">bibtex</a>]
+		  	</div><br>
+		  	<div class="project_abs"><p id="paperLiangCCC2022_abs" style="display: none;">
+				Merging multiple maps is necessary when the task of mapping a large area is divided and assigned to 
+				different robots. Unlike scanned or reconstructed models, point cloud maps built by SLAM are usually
+				sparser and contain much noise, making current global registration methods failed. In this paper, we 
+				focus on the global registration of point cloud maps which have low-overlap regions and no prior 
+				relative transformation between each other, so that maps can still be merged in GPS-denied environment. 
+				Our method adopts a pipeline of feature matching, where key points are first selected evenly within voxel 
+				grids and then used for getting feature descriptors. After matching for correspondences, a RANSAC based 
+				registration gives the rough transformation between maps, which can further be refined by ICP. To improve
+				the accuracy of correspondences, we specifically introduce a keypoint clustering and classification method.
+				Except for 3D point cloud maps as inputs, no other information is needed. Experiments on the campus show 
+				that our approach successfully deals with large area with similar structures.
+		  	</p>
+		  	<pre id="paperLiangCCC2022_bib" xml:space="preserve" style="display: none;">@inproceedings{liang2022global,
+  title={Global Registration of Point Cloud Maps with 
+	 Low-overlap Regions},
+  author={Liang, Wenhao and Lai, Haowen and Shi, Zongying 
+	 and Zhong, Yisheng},
+  booktitle={2022 41st Chinese Control Conference (CCC)},
+  pages={3743--3748},
+  year={2022},
+  organization={IEEE}
+}
+			</pre></div>
+		</td>
+	</tr>
+
+
 
     <tr>
       	<td width="30%" valign="top" align="center">
@@ -79,11 +177,12 @@
           	</td>
 		<td width="70%" valign="top">
 			<span class="anchor"><a name="paperTAC2021"><b>Multiplayer Homicidal Chauffeur Reach-Avoid Games via Guaranteed Winning Strategies</b></a></span>
-			<br>Rui Yan, Ruiliang Deng, <u><i>Haowen Lai</i></u>,  Weixian Zhang, Zongying Shi, Yisheng Zhong
-			<br>(TAC) <span class="paper_venue">IEEE Transactions on Automatic Control</span> (Under Review)<br>
+			<br>Rui Yan, Ruiliang Deng, <b><u>Haowen Lai</u></b>,  Weixian Zhang, Zongying Shi, Yisheng Zhong
+			<br>(TAC 2022) <span class="paper_venue">IEEE Transactions on Automatic Control</span> (Under Review)<br>
 			<div class="project_link" id="paperMultiplayerGuaranteed">
 				[<a href="https://arxiv.org/abs/2107.04709" target="_blank">pdf</a>] 
-				[<a href="javascript:toggleblock('paperMultiplayerGuaranteed_abs')">abstract</a>] 
+				[<a href="javascript:toggleblock('paperMultiplayerGuaranteed_abs')">abstract</a>]
+				[<a class="togglebib" href="javascript:toggleblock('paperMultiplayerGuaranteed_bib')">bibtex</a>]
 			</div><br>
 			<div class="project_abs"><p id="paperMultiplayerGuaranteed_abs" style="display: none;">
 				This paper studies a planar multiplayer Homicidal Chauffeur reach-avoid differential game, where each pursuer is a Dubins car 
@@ -100,7 +199,16 @@
 				A polynomial equation gives a lower bound of the non-convex problem, providing a sufficient and efficient pursuit 
 				winning condition. Finally, these pairwise outcomes are collected for the pursuer-evader matching. Simulations are provided 
 				to illustrate the theoretical results.
-			</p></div>
+			</p>
+			<pre id="paperMultiplayerGuaranteed_bib" xml:space="preserve" style="display: none;">@article{yan2021multiplayer,
+  title={Multiplayer Homicidal Chauffeur Reach-Avoid Games 
+	 via Guaranteed Winning Strategies},
+  author={Yan, Rui and Deng, Ruiliang and Lai, Haowen and
+	 Zhang, Weixian and Shi, Zongying and Zhong, Yisheng},
+  journal={arXiv preprint arXiv:2107.04709},
+  year={2021}
+}
+			</pre></div>
 		</td>
 	</tr>
 
@@ -110,8 +218,8 @@
           	</td>
 		<td width="70%" valign="top">
 			<span class="anchor"><a name="paperCDC2021"><b>Reach-Avoid Differential Games via Finite-Time Heading Tracking</b></a></span>
-			<br><u><i>Haowen Lai</i></u>, Rui Yan, Weixian Zhang, Zongying Shi, Yisheng Zhong
-			<br>(CDC) <span class="paper_venue">IEEE Conference on Decision and Control, 2021</span><br>
+			<br><b><u>Haowen Lai</u></b>, Rui Yan, Weixian Zhang, Zongying Shi, Yisheng Zhong
+			<br>(CDC 2021) <span class="paper_venue">IEEE Conference on Decision and Control</span><br>
 			<div class="project_link" id="paperReachAvoid">
 				[<a href="https://ieeexplore.ieee.org/document/9683266" target="_blank">pdf</a>]
 				[<a href="javascript:toggleblock('paperReachAvoid_abs')">abstract</a>]
@@ -149,8 +257,8 @@
           	</td>
 		<td width="70%" valign="top">
 			<span class="anchor"><a name="paperCCC2021"><b>LiDAR-Inertial based Localization and Perception for Indoor Pursuit-Evasion Differential Games</b></a></span>
-			<br><u><i>Haowen Lai</i></u>, Wenhao Liang, Rui Yan, Zongying Shi, Yisheng Zhong
-			<br>(CCC) <span class="paper_venue">IEEE Chinese Control Conference, 2021</span><br>
+			<br><b><u>Haowen Lai</u></b>, Wenhao Liang, Rui Yan, Zongying Shi, Yisheng Zhong
+			<br>(CCC 2021) <span class="paper_venue">IEEE Chinese Control Conference</span><br>
 			<div class="project_link" id="paperLidarPerception">
 				[<a href="https://ieeexplore.ieee.org/document/9549330" target="_blank">pdf</a>] 
 				[<a href="javascript:toggleblock('paperLidarPerception_abs')">abstract</a>] 
@@ -187,8 +295,8 @@
           	</td>
 		<td width="70%" valign="top">
 			<span class="anchor"><a name="paper2019"><b>A Novel Scale Recognition Method for Pointer Meters Adapted to Different Types and Shapes</b></a></span>
-			<br><u><i>Haowen Lai</i></u>, Qi Kang, Le Pan, Can Cui
-			<br>(CASE) <span class="paper_venue">IEEE International Conference on Automation Science and Engineering, 2019</span><br>
+			<br><b><u>Haowen Lai</u></b>, Qi Kang, Le Pan, Can Cui
+			<br>(CASE 2019) <span class="paper_venue">IEEE International Conference on Automation Science and Engineering</span><br>
 			<div class="project_link" id="paperMeterReader">
 				[<a href="https://ieeexplore.ieee.org/document/8843107" target="_blank">pdf</a>] 
 				[<a href="javascript:toggleblock('paperMeterReader_abs')">abstract</a>] 
@@ -199,7 +307,7 @@
 				Nowadays plenty of pointer meters are used in the field of chemical industry and electrical power system. To avoid 
 				reading their indication manually, many algorithms based on computer vision have been proposed to read pointer meters 
 				automatically. These methods, however, are limited to meters whose scales are uniform, and their accuracy is vulnerable to 
-				the error in the recognition of a meter’s center. In this paper, a novel automatic reading algorithm of pointer meters based on 
+				the error in the recognition of a meter's center. In this paper, a novel automatic reading algorithm of pointer meters based on 
 				scale seeking is proposed to overcome the weaknesses of the existing methods. Differing from the popular angle-based 
 				methods, we obtain the indication of the meter by comparing the distances between the peak of pointer and its nearest scales. The 
 				position and values of all scales can be automatically acquired and inferred by using our scale seeking and value inference 
