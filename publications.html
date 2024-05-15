@@ -36,7 +36,7 @@
 	<div id="menu">
 		<div><a href="index.html">Home</a></div>
 		<div><a href="bio.html">Bio</a></div>
-		<div><a href="research.html">Research</a></div>
+		<div><a href="projects.html">Projects</a></div>
 		<div class="now"><a href="publications.html">Publications</a></div>
 	</div>
 	<!-- end of memu --> 
@@ -45,14 +45,34 @@
 	<h2>Publications</h2>
     <table width="100%" cellspacing="0" cellpadding="10" border="0" align="center"><tbody>
     
+
+	<tr>
+		<td width="30%" valign="top" align="center">
+				<img src="images/paper_panoradar.png" alt="paper_PanoRadar" style="border-style: none"  width="80%" >
+		</td>
+		<td width="70%" valign="top">
+			<span class="anchor"><a name="paperAutomerge"></a><b>Enabling Visual Recognition at Radio Frequency</b></span>
+			<br><b><u>Haowen Lai</u></b>, Gaoxiang Luo, Yifei Liu, Mingmin Zhao
+			<br>(MobiCom 2024) <span class="paper_venue">ACM International Conference on Mobile Computing and Networking</span> (Accepted)<br>
+			<div class="project_link">
+				[<a href="javascript:toggleblock('paperLai2024Panoradar_abs')">abstract</a>]
+			</div><br>
+			<div class="project_abs"><p id="paperLai2024Panoradar_abs" style="display: none;">
+				Abstract will be available after published.
+			</p>
+			</div>
+		</td>
+	</tr>
+
+
 	<tr>
       	<td width="30%" valign="top" align="center">
           		<img src="images/paper_automerge.png" alt="paper_Automerge" style="border-style: none"  width="80%" >
           	</td>
 		<td width="70%" valign="top">
 			<span class="anchor"><a name="paperAutomerge"></a><b>Automerge: A framework for map assembling and smoothing in city-scale environments</b></span>
-			<br>Peng Yin, <b><u>Haowen Lai</u></b>*, Shiqi Zhao*, Ruijie Fu, Ivan Cisneros, Ruohai Ge, Ji Zhang, Howie Choset and Sebastian Scherer
-			<br>(T-RO 2022) <span class="paper_venue">IEEE Transactions on Robotics</span> (Under Review)<br>
+			<br>Peng Yin, Shiqi Zhao, <b><u>Haowen Lai</u></b>, Ruijie Fu, Ivan Cisneros, Ruohai Ge, Ji Zhang, Howie Choset and Sebastian Scherer
+			<br>(T-RO 2023) <span class="paper_venue">IEEE Transactions on Robotics</span><br>
 			<div class="project_link">
 				[<a href="https://arxiv.org/abs/2207.06965" target="_blank">pdf</a>] 
 				[<a href="https://github.com/MetaSLAM/AutoMerge_Server" target="_blank">code</a>] 
@@ -85,7 +105,50 @@
 			</pre></div>
 		</td>
     </tr>
-	
+
+
+    <tr>
+		<td width="30%" valign="top" align="center">
+				<img src="images/paper_MultiplayerGuaranteed.png" alt="paper_Multiplayer_Guaranteed" style="border-style: none"  width="80%" >
+			</td>
+	  <td width="70%" valign="top">
+		  <span class="anchor"><a name="paperTAC2021"><b>Multiplayer Homicidal Chauffeur Reach-Avoid Games via Guaranteed Winning Strategies</b></a></span>
+		  <br>Rui Yan, Ruiliang Deng, <b><u>Haowen Lai</u></b>,  Weixian Zhang, Zongying Shi, Yisheng Zhong
+		  <br>(TAC 2023) <span class="paper_venue">IEEE Transactions on Automatic Control</span><br>
+		  <div class="project_link" id="paperMultiplayerGuaranteed">
+			  [<a href="https://arxiv.org/abs/2107.04709" target="_blank">pdf</a>] 
+			  [<a href="javascript:toggleblock('paperMultiplayerGuaranteed_abs')">abstract</a>]
+			  [<a class="togglebib" href="javascript:toggleblock('paperMultiplayerGuaranteed_bib')">bibtex</a>]
+		  </div><br>
+		  <div class="project_abs"><p id="paperMultiplayerGuaranteed_abs" style="display: none;">
+			  This paper studies a planar multiplayer Homicidal Chauffeur reach-avoid differential game, where each pursuer is a Dubins car 
+			  and each evader has simple motion. The pursuers aim to protect a goal region cooperatively from the evaders. Due to the 
+			  high-dimensional strategy space among pursuers, we decompose the whole game into multiple one-pursuer-one-evader 
+			  subgames, each of which is solved in an analytical approach instead of solving Hamilton-Jacobi-Isaacs equations. For each 
+			  subgame, an evasion region (ER) is introduced, based on which a pursuit strategy guaranteeing the winning of a simple-motion 
+			  pursuer under specific conditions is proposed. Motivated by the simple-motion pursuer, a strategy for a Dubins-car pursuer 
+			  is proposed when the pursuer-evader configuration satisfies separation condition (SC) and interception orientation (IO). 
+			  The necessary and sufficient condition on capture radius, minimum turning radius and speed ratio to guarantee the 
+			  pursuit winning is derived. When the IO is not satisfied (Non-IO), a heading adjustment pursuit strategy is proposed, 
+			  and the condition to achieve IO within a finite time, is given. Then, a two-step pursuit strategy is proposed for the SC and 
+			  Non-IO case. A non-convex optimization problem is introduced to give a condition guaranteeing the winning of the pursuer. 
+			  A polynomial equation gives a lower bound of the non-convex problem, providing a sufficient and efficient pursuit 
+			  winning condition. Finally, these pairwise outcomes are collected for the pursuer-evader matching. Simulations are provided 
+			  to illustrate the theoretical results.
+		  </p>
+		  <pre id="paperMultiplayerGuaranteed_bib" xml:space="preserve" style="display: none;">@article{yan2021multiplayer,
+title={Multiplayer Homicidal Chauffeur Reach-Avoid Games 
+   via Guaranteed Winning Strategies},
+author={Yan, Rui and Deng, Ruiliang and Lai, Haowen and
+   Zhang, Weixian and Shi, Zongying and Zhong, Yisheng},
+journal={arXiv preprint arXiv:2107.04709},
+year={2021}
+}
+		  </pre></div>
+	  </td>
+  </tr>
+
+
 	<tr>
       	<td width="30%" valign="top" align="center">
           		<img src="images/paper_lai2021adafusion.png" alt="paper_AdaFusion" style="border-style: none"  width="80%" >
@@ -169,48 +232,6 @@
 		</td>
 	</tr>
 
-
-
-    <tr>
-      	<td width="30%" valign="top" align="center">
-          		<img src="images/paper_MultiplayerGuaranteed.png" alt="paper_Multiplayer_Guaranteed" style="border-style: none"  width="80%" >
-          	</td>
-		<td width="70%" valign="top">
-			<span class="anchor"><a name="paperTAC2021"><b>Multiplayer Homicidal Chauffeur Reach-Avoid Games via Guaranteed Winning Strategies</b></a></span>
-			<br>Rui Yan, Ruiliang Deng, <b><u>Haowen Lai</u></b>,  Weixian Zhang, Zongying Shi, Yisheng Zhong
-			<br>(TAC 2022) <span class="paper_venue">IEEE Transactions on Automatic Control</span> (Under Review)<br>
-			<div class="project_link" id="paperMultiplayerGuaranteed">
-				[<a href="https://arxiv.org/abs/2107.04709" target="_blank">pdf</a>] 
-				[<a href="javascript:toggleblock('paperMultiplayerGuaranteed_abs')">abstract</a>]
-				[<a class="togglebib" href="javascript:toggleblock('paperMultiplayerGuaranteed_bib')">bibtex</a>]
-			</div><br>
-			<div class="project_abs"><p id="paperMultiplayerGuaranteed_abs" style="display: none;">
-				This paper studies a planar multiplayer Homicidal Chauffeur reach-avoid differential game, where each pursuer is a Dubins car 
-				and each evader has simple motion. The pursuers aim to protect a goal region cooperatively from the evaders. Due to the 
-				high-dimensional strategy space among pursuers, we decompose the whole game into multiple one-pursuer-one-evader 
-				subgames, each of which is solved in an analytical approach instead of solving Hamilton-Jacobi-Isaacs equations. For each 
-				subgame, an evasion region (ER) is introduced, based on which a pursuit strategy guaranteeing the winning of a simple-motion 
-				pursuer under specific conditions is proposed. Motivated by the simple-motion pursuer, a strategy for a Dubins-car pursuer 
-				is proposed when the pursuer-evader configuration satisfies separation condition (SC) and interception orientation (IO). 
-				The necessary and sufficient condition on capture radius, minimum turning radius and speed ratio to guarantee the 
-				pursuit winning is derived. When the IO is not satisfied (Non-IO), a heading adjustment pursuit strategy is proposed, 
-				and the condition to achieve IO within a finite time, is given. Then, a two-step pursuit strategy is proposed for the SC and 
-				Non-IO case. A non-convex optimization problem is introduced to give a condition guaranteeing the winning of the pursuer. 
-				A polynomial equation gives a lower bound of the non-convex problem, providing a sufficient and efficient pursuit 
-				winning condition. Finally, these pairwise outcomes are collected for the pursuer-evader matching. Simulations are provided 
-				to illustrate the theoretical results.
-			</p>
-			<pre id="paperMultiplayerGuaranteed_bib" xml:space="preserve" style="display: none;">@article{yan2021multiplayer,
-  title={Multiplayer Homicidal Chauffeur Reach-Avoid Games 
-	 via Guaranteed Winning Strategies},
-  author={Yan, Rui and Deng, Ruiliang and Lai, Haowen and
-	 Zhang, Weixian and Shi, Zongying and Zhong, Yisheng},
-  journal={arXiv preprint arXiv:2107.04709},
-  year={2021}
-}
-			</pre></div>
-		</td>
-	</tr>
 
 	<tr>
       	<td width="30%" valign="top" align="center">
@@ -338,14 +359,19 @@
 	<div id="patents" class="section">
 		<h2>Patents</h2><ol>
 		<li>
+			<span class="anchor"><a name="patent2024"><b>Methods, Systems, and Computer Readable Media for Providing 3D Imaging Using Radio Frequencies</b></a></span>
+			<br>Mingmin Zhao, Gaoxiang Luo, Yifei Liu, <u><i>Haowen Lai</u></i>
+			<br><span class="paper_venue">US Patent Application 63/626,860, filed Jan. 2024. Patent Pending.</span>
+		</li>
+		<li>
 			<span class="anchor"><a name="patent2021"><b>A Map Construction Method and a LiDAR-inertial Odometry</b></a></span>
 			<br><u><i>Haowen Lai</u></i>, Xiaoxu Jiang
-			<br><span class="paper_venue">China Patent Application 202110618535.5, filed Jun. 2021. Patent Pending.</span>
+			<br><span class="paper_venue">China Patent Application 202110618535.5, filed Jun. 2021. Patent Authorized.</span>
 		</li>
 		<li>
 			<b>Registration Method based on CNN Point Cloud Object Detection</b>
 			<br>Bo Wen, Jian Zhang, Shuang Liang, Tianyi Lu, Qi Xiong, Xiaoxu Jiang, <u><i>Haowen Lai</u></i>
-			<br><span class="paper_venue">China Patent Application 202011545903.X, filed Dec. 2020. Patent Pending.</span>
+			<br><span class="paper_venue">China Patent Application 202011545903.X, filed Dec. 2020. Patent Authorized.</span>
 		</li>
 		<li>
 			<span class="anchor"><a name="patent2019"><b>Automatic Reading Method for Pointer Meters based on Scale Seeking</b></a></span>
