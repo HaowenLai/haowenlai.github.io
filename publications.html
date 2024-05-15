@@ -70,37 +70,42 @@
           		<img src="images/paper_automerge.png" alt="paper_Automerge" style="border-style: none"  width="80%" >
           	</td>
 		<td width="70%" valign="top">
-			<span class="anchor"><a name="paperAutomerge"></a><b>Automerge: A framework for map assembling and smoothing in city-scale environments</b></span>
-			<br>Peng Yin, Shiqi Zhao, <b><u>Haowen Lai</u></b>, Ruijie Fu, Ivan Cisneros, Ruohai Ge, Ji Zhang, Howie Choset and Sebastian Scherer
+			<span class="anchor"><a name="paperAutomerge"></a><b>AutoMerge: A Framework for Map Assembling and Smoothing in City-Scale Environments</b></span>
+			<br>Peng Yin, Shiqi Zhao, <b><u>Haowen Lai</u></b>, Ruohai Ge, Ji Zhang, Howie Choset, Sebastian Scherer
 			<br>(T-RO 2023) <span class="paper_venue">IEEE Transactions on Robotics</span><br>
 			<div class="project_link">
-				[<a href="https://arxiv.org/abs/2207.06965" target="_blank">pdf</a>] 
-				[<a href="https://github.com/MetaSLAM/AutoMerge_Server" target="_blank">code</a>] 
+				[<a href="https://ieeexplore.ieee.org/document/10203034" target="_blank">pdf</a>] 
+				[<a href="https://github.com/MetaSLAM/AutoMerge_Docker" target="_blank">code</a>] 
 				[<a href="javascript:toggleblock('paperYin2022Automerge_abs')">abstract</a>]
 				[<a class="togglebib" href="javascript:toggleblock('paperYin2022Automerge_bib')">bibtex</a>]
 			</div><br>
 			<div class="project_abs"><p id="paperYin2022Automerge_abs" style="display: none;">
-				We present AutoMerge, a LiDAR data processing framework for assembling a large number of map segments into a
-				complete map. Traditional large-scale map merging methods are fragile to incorrect data associations, and are
-				primarily limited to working only offline. AutoMerge utilizes multi-perspective fusion and adaptive loop 
-				closure detection for accurate data associations, and it uses incremental merging to assemble large maps from
-				individual trajectory segments given in random order and with no initial estimations. Furthermore, after 
-				assembling the segments, AutoMerge performs fine matching and pose-graph optimization to globally smooth the 
-				merged map. We demonstrate AutoMerge on both city-scale merging (120km) and campus-scale repeated merging 
-				(4.5km x 8). The experiments show that AutoMerge (i) surpasses the second- and third- best methods by 14% and
-				24% recall in segment retrieval, (ii) achieves comparable 3D mapping accuracy for 120 km large-scale map assembly,
-				(iii) and it is robust to temporally-spaced revisits. To the best of our knowledge, AutoMerge is the first 
-				mapping approach that can merge hundreds of kilometers of individual segments without the aid of GPS.
+				In the era of advancing autonomous driving and increasing reliance on geospatial information, high-precision mapping not only 
+				demands accuracy but also flexible construction. Current approaches mainly rely on expensive mapping devices, which are time 
+				consuming for city-scale map construction and vulnerable to erroneous data associations without accurate GPS assistance. In this
+				article, we present AutoMerge, a novel framework for merging large-scale maps that surpasses these limitations, which: 1) provides 
+				robust place recognition performance despite differences in both translation and viewpoint; 2) is capable of identifying and 
+				discarding incorrect loop closures caused by perceptual aliasing; and 3) effectively associates and optimizes large-scale and 
+				numerous map segments in the real-world scenario. AutoMerge utilizes multiperspective fusion and adaptive loop closure detection 
+				for accurate data associations, and it uses incremental merging to assemble large maps from individual trajectory segments given 
+				in random order and with no initial estimations. Furthermore, AutoMerge performs pose graph optimization after assembling the 
+				segments to smooth the merged map globally. We demonstrate AutoMerge on both city-scale merging (120 km) and campus-scale repeated 
+				merging (4.5 km x 8). The experiments show that AutoMerge: 1) surpasses the second- and third-best methods by 0.9% and 6.5% recall 
+				in segment retrieval; 2) achieves comparable 3-D mapping accuracy for 120-km large-scale map assembly; and 3) and is robust to 
+				temporally spaced revisits. To our knowledge, AutoMerge is the first mapping approach to merge hundreds of kilometers of individual 
+				segments without using GPS.
 			</p>
-			<pre id="paperYin2022Automerge_bib" xml:space="preserve" style="display: none;">@article{yin2022automerge,
-  title={Automerge: A framework for map assembling
-  	 and smoothing in city-scale environments},
-  author={Yin, Peng and Lai, Haowen and Zhao, Shiqi
-	 and Fu, Ruijie and Cisneros, Ivan and Ge, Ruohai
-	 and Zhang, Ji and Choset, Howie
+			<pre id="paperYin2022Automerge_bib" xml:space="preserve" style="display: none;">@article{yin2023automerge,
+  title={Automerge: A Framework for Map Assembling
+  	 and Smoothing in City-Scale Environments},
+  author={Yin, Peng and Zhao, Shiqi and Lai, Haowen
+	 and Ge, Ruohai and Zhang, Ji and Choset, Howie
 	 and Scherer, Sebastian},
-  journal={arXiv preprint arXiv:2207.06965},
-  year={2022}
+  journal={IEEE Transactions on Robotics},
+  volume={39},
+  number={5},
+  pages={3686-3704},
+  year={2023}
 }
 			</pre></div>
 		</td>
@@ -111,42 +116,42 @@
 		<td width="30%" valign="top" align="center">
 				<img src="images/paper_MultiplayerGuaranteed.png" alt="paper_Multiplayer_Guaranteed" style="border-style: none"  width="80%" >
 			</td>
-	  <td width="70%" valign="top">
-		  <span class="anchor"><a name="paperTAC2021"><b>Multiplayer Homicidal Chauffeur Reach-Avoid Games via Guaranteed Winning Strategies</b></a></span>
-		  <br>Rui Yan, Ruiliang Deng, <b><u>Haowen Lai</u></b>,  Weixian Zhang, Zongying Shi, Yisheng Zhong
-		  <br>(TAC 2023) <span class="paper_venue">IEEE Transactions on Automatic Control</span><br>
-		  <div class="project_link" id="paperMultiplayerGuaranteed">
-			  [<a href="https://arxiv.org/abs/2107.04709" target="_blank">pdf</a>] 
-			  [<a href="javascript:toggleblock('paperMultiplayerGuaranteed_abs')">abstract</a>]
-			  [<a class="togglebib" href="javascript:toggleblock('paperMultiplayerGuaranteed_bib')">bibtex</a>]
-		  </div><br>
-		  <div class="project_abs"><p id="paperMultiplayerGuaranteed_abs" style="display: none;">
-			  This paper studies a planar multiplayer Homicidal Chauffeur reach-avoid differential game, where each pursuer is a Dubins car 
-			  and each evader has simple motion. The pursuers aim to protect a goal region cooperatively from the evaders. Due to the 
-			  high-dimensional strategy space among pursuers, we decompose the whole game into multiple one-pursuer-one-evader 
-			  subgames, each of which is solved in an analytical approach instead of solving Hamilton-Jacobi-Isaacs equations. For each 
-			  subgame, an evasion region (ER) is introduced, based on which a pursuit strategy guaranteeing the winning of a simple-motion 
-			  pursuer under specific conditions is proposed. Motivated by the simple-motion pursuer, a strategy for a Dubins-car pursuer 
-			  is proposed when the pursuer-evader configuration satisfies separation condition (SC) and interception orientation (IO). 
-			  The necessary and sufficient condition on capture radius, minimum turning radius and speed ratio to guarantee the 
-			  pursuit winning is derived. When the IO is not satisfied (Non-IO), a heading adjustment pursuit strategy is proposed, 
-			  and the condition to achieve IO within a finite time, is given. Then, a two-step pursuit strategy is proposed for the SC and 
-			  Non-IO case. A non-convex optimization problem is introduced to give a condition guaranteeing the winning of the pursuer. 
-			  A polynomial equation gives a lower bound of the non-convex problem, providing a sufficient and efficient pursuit 
-			  winning condition. Finally, these pairwise outcomes are collected for the pursuer-evader matching. Simulations are provided 
-			  to illustrate the theoretical results.
-		  </p>
-		  <pre id="paperMultiplayerGuaranteed_bib" xml:space="preserve" style="display: none;">@article{yan2021multiplayer,
-title={Multiplayer Homicidal Chauffeur Reach-Avoid Games 
-   via Guaranteed Winning Strategies},
-author={Yan, Rui and Deng, Ruiliang and Lai, Haowen and
-   Zhang, Weixian and Shi, Zongying and Zhong, Yisheng},
-journal={arXiv preprint arXiv:2107.04709},
-year={2021}
+	    <td width="70%" valign="top">
+		    <span class="anchor"><a name="paperTAC2021"><b>Homicidal Chauffeur Reach-Avoid Games via Guaranteed Winning Strategies</b></a></span>
+		    <br>Rui Yan, Ruiliang Deng, <b><u>Haowen Lai</u></b>, Weixian Zhang, Zongying Shi, Yisheng Zhong
+		    <br>(TAC 2023) <span class="paper_venue">IEEE Transactions on Automatic Control</span><br>
+		    <div class="project_link" id="paperMultiplayerGuaranteed">
+		 	    [<a href="https://ieeexplore.ieee.org/document/10305291" target="_blank">pdf</a>] 
+		 	    [<a href="javascript:toggleblock('paperMultiplayerGuaranteed_abs')">abstract</a>]
+		 	    [<a class="togglebib" href="javascript:toggleblock('paperMultiplayerGuaranteed_bib')">bibtex</a>]
+		    </div><br>
+		    <div class="project_abs"><p id="paperMultiplayerGuaranteed_abs" style="display: none;">
+		        This article studies a planar Homicidal Chauffeur reach-avoid differential game, where the pursuer is a Dubins car and the evader 
+		        has simple motion. The pursuer aims to protect a goal region from the evader. The game is solved in an analytical approach instead
+		        of solving Hamilton-Jacobi-Isaacs equations numerically. First, an evasion region is introduced, based on which a pursuit strategy
+		        guaranteeing the winning of a simple-motion pursuer under specific conditions is proposed. Motivated by the simple-motion pursuer,
+		        a strategy for a Dubins-car pursuer is proposed when the pursuer-evader configuration satisfies separation condition (SC) and 
+		        interception orientation (IO) . The necessary and sufficient condition on capture radius, minimum turning radius, and speed ratio
+		        to guarantee the pursuit winning is derived. When the IO is deviated (Non-IO), a heading adjustment pursuit strategy is proposed, 
+		        and the condition to achieve IO within a finite time is given. Based on it, a two-step pursuit strategy is proposed for the SC and
+		        Non-IO case. A nonconvex optimization problem is introduced to give a condition guaranteeing the winning of the pursuer. A polynomial
+		        equation gives a lower bound of the nonconvex problem, providing a sufficient and efficient pursuit winning condition. Finally, we 
+		        extend to multiplayer games by collecting pairwise outcomes for pursuer-evader matchings. Simulations are provided to illustrate 
+		        the theoretical results.</p>
+		    <pre id="paperMultiplayerGuaranteed_bib" xml:space="preserve" style="display: none;">@article{yan2023homicidal,
+  title={Homicidal Chauffeur Reach-Avoid Games via
+     Guaranteed Winning Strategies},
+  author={Yan, Rui and Deng, Ruiliang and Lai, Haowen and
+     Zhang, Weixian and Shi, Zongying and Zhong, Yisheng},
+  journal={IEEE Transactions on Automatic Control},
+  volume={69},
+  number={4},
+  pages={2367-2382},
+  year={2023}
 }
-		  </pre></div>
-	  </td>
-  </tr>
+		    </pre></div>
+	    </td>
+    </tr>
 
 
 	<tr>
@@ -178,8 +183,8 @@ year={2021}
 				the adaptive weights help improve recognition accuracy and system robustness to varying environments. 
 			</p>
 			<pre id="paperLai2021adafusion_bib" xml:space="preserve" style="display: none;">@article{lai2022adafusion,
-  title={Adafusion: Visual-lidar fusion with adaptive
-	 weights for place recognition},
+  title={Adafusion: Visual-lidar Fusion with Adaptive
+	 Weights for Place Recognition},
   author={Lai, Haowen and Yin, Peng and Scherer, Sebastian},
   journal={IEEE Robotics and Automation Letters},
   volume={7},
