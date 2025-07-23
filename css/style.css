@@ -167,8 +167,13 @@ ol li {
 }
 
 #foot_logos img {
-	margin: 0 35px;
+	margin: 0 20px;
 	vertical-align: middle;
+}
+
+#media img {
+	margin-right:25px;
+	vertical-align: left;
 }
 
 #footer {
