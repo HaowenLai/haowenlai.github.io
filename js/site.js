@@ -19,6 +19,7 @@ const PAGE_SECTION_NAV = {
     { id: "education", label: "Education" },
     { id: "awards", label: "Awards" },
     { id: "honors", label: "Honors" },
+    { id: "industry", label: "Industry" },
     { id: "teaching", label: "Teaching" },
     { id: "professional-activities", label: "Professional Activities" },
     { id: "community-service", label: "Community Service" },
@@ -30,7 +31,6 @@ const PAGE_SECTION_NAV = {
   ],
   media: [
     { id: "videos", label: "Videos" },
-    { id: "photos", label: "Photos" },
   ],
 };
 
@@ -160,7 +160,14 @@ function renderPeople(people) {
 function renderSectionHeader(title) {
   return `
     <div class="section-heading">
-      <h2>${title}</h2>
+      <h2>
+        <button class="section-heading__toggle" type="button" aria-expanded="true">
+          <span>${title}</span>
+          <svg class="section-heading__icon" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="m5 7.5 5 5 5-5"/>
+          </svg>
+        </button>
+      </h2>
     </div>
   `;
 }
@@ -357,6 +364,7 @@ function renderMediaCoverage() {
         (item) => `
               <a class="press-card" href="${item.href}" target="_blank" rel="noreferrer">
                 <img src="${item.src}" alt="${item.alt}">
+                <span class="press-card__caption">${item.caption}</span>
               </a>
             `,
       )
@@ -537,21 +545,6 @@ function renderMediaPage() {
       .join("")}
       </div>
     </section>
-    <section class="content-section" id="photos">
-      ${renderSectionHeader("Photos")}
-      <div class="media-grid">
-        ${media.photos
-      .map(
-        (item) => `
-              <figure class="media-card">
-                <img src="${item.src}" alt="${item.alt}">
-                <figcaption>${item.caption}</figcaption>
-              </figure>
-            `,
-      )
-      .join("")}
-      </div>
-    </section>
   `;
 }
 
@@ -572,6 +565,7 @@ function renderBioPage() {
     ${renderBioList("education", "Education", bio.education)}
     ${renderBioList("awards", "Awards", bio.awards)}
     ${renderBioList("honors", "Honors", bio.honors)}
+    ${renderBioBlocks("industry", "Industry", bio.industry)}
     ${renderBioBlocks("teaching", "Teaching", bio.teaching)}
     ${renderBioBlocks("professional-activities", "Professional Activities", bio.professional)}
     ${renderBioBlocks("community-service", "Community Service", bio.service)}
@@ -608,6 +602,26 @@ function renderApp() {
       ${renderFooter()}
     </div>
   `;
+
+  root.querySelectorAll(".section-heading__toggle").forEach((sectionToggle) => {
+    sectionToggle.addEventListener("click", () => {
+      const section = sectionToggle.closest(".content-section");
+      const isExpanded = sectionToggle.getAttribute("aria-expanded") === "true";
+
+      if (!section) {
+        return;
+      }
+
+      Array.from(section.children).forEach((child) => {
+        if (!child.classList.contains("section-heading")) {
+          child.hidden = isExpanded;
+        }
+      });
+
+      section.classList.toggle("is-collapsed", isExpanded);
+      sectionToggle.setAttribute("aria-expanded", String(!isExpanded));
+    });
+  });
 
   const toggle = root.querySelector(".timeline-toggle");
   if (toggle) {
