@@ -22,7 +22,6 @@ const PAGE_SECTION_NAV = {
     { id: "industry", label: "Industry" },
     { id: "teaching", label: "Teaching" },
     { id: "professional-activities", label: "Professional Activities" },
-    { id: "community-service", label: "Community Service" },
   ],
   research: [
     { id: "publications", label: "Publications" },
@@ -30,7 +29,8 @@ const PAGE_SECTION_NAV = {
     { id: "patents", label: "Patents" },
   ],
   media: [
-    { id: "videos", label: "Videos" },
+    { id: "demo-videos", label: "Demo Videos" },
+    { id: "presentations-talks", label: "Presentations & Talks" },
   ],
 };
 
@@ -50,6 +50,7 @@ function getLinkIcon(label) {
     code: "code",
     dataset: "dataset",
     demo: "demo",
+    presentation: "demo",
     slides: "slides",
     "open video": "demo",
   };
@@ -518,10 +519,10 @@ function renderResearchPage() {
 function renderMediaPage() {
   const { media } = window.SITE_DATA;
   return `
-    <section class="content-section" id="videos">
-      ${renderSectionHeader("Videos")}
+    <section class="content-section" id="demo-videos">
+      ${renderSectionHeader("Demo Videos")}
       <div class="media-grid media-grid--video">
-        ${media.videos
+        ${media.demoVideos
       .map(
         (item) => `
               <figure class="media-card">
@@ -543,6 +544,33 @@ function renderMediaPage() {
             `,
       )
       .join("")}
+      </div>
+    </section>
+    <section class="content-section" id="presentations-talks">
+      ${renderSectionHeader("Presentations & Talks")}
+      <div class="media-grid media-grid--video">
+        ${media.presentationsTalks
+          .map(
+            (item) => `
+              <figure class="media-card">
+                <div class="media-card__frame">
+                  <iframe
+                    src="${item.embed}"
+                    title="${item.title}"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <figcaption>
+                  <strong>${item.title}</strong>
+                  <p>${item.caption}</p>
+                  <a class="text-link" href="${item.href}" target="_blank" rel="noreferrer">Open video</a>
+                </figcaption>
+              </figure>
+            `,
+          )
+          .join("")}
       </div>
     </section>
   `;
@@ -568,7 +596,6 @@ function renderBioPage() {
     ${renderBioBlocks("industry", "Industry", bio.industry)}
     ${renderBioBlocks("teaching", "Teaching", bio.teaching)}
     ${renderBioBlocks("professional-activities", "Professional Activities", bio.professional)}
-    ${renderBioBlocks("community-service", "Community Service", bio.service)}
   `;
 }
 

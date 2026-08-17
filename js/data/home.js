@@ -4,11 +4,13 @@ Object.assign(window.SITE_DATA, {
     about: [
       `I am currently a Ph.D. student in the <a href="https://www.cis.upenn.edu/">CIS department</a> at the <a href="https://www.upenn.edu/">University of Pennsylvania</a>, advised by Prof. <a href="http://people.csail.mit.edu/mingmin/">Mingmin Zhao</a>. Before that, I received my M.S. from <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> in 2022 and my B.Eng. from <a href="https://en.tongji.edu.cn/index.htm">Tongji University</a> in 2019.`,
       `The pronunciation of my name is <span class="pronunciation">HOW-wuhn LYE  /'haʊwən laɪ/</span>. More background can be found on the Bio page and in my CV. If you are interested in collaboration, feel free to contact me by email.`,
+      `📢📢📢 <strong>I am looking for a full-time industry position starting in 2027.</strong>`,
     ],
     research: [
-      "My research lies at the intersection of <strong>wireless sensing</strong>, <strong>autonomous systems</strong>, and <strong>robotics</strong>, with a focus on building robust high-resolution perception systems for mobile robots.",
-      "I am particularly interested in leveraging wireless signals to enable resilient environmental understanding and situational awareness, especially in challenging or GPS- or vision-denied environments.",
-      "My goal is to develop <strong>perception methods that are not only accurate but also reliable and safe</strong>, supporting critical applications such as autonomous navigation, search and rescue, and long-term deployment in dynamic real-world settings.",
+      "My research focuses on building robust <strong>multimodal wireless sensing and perception systems</strong>.",
+      "I am particularly interested in <strong>RF and radar perception</strong>, including <strong>foundation models for RF sensing</strong> that integrate wireless signals with vision, audio, wifi, and other sensing modalities.",
+      "My work aims to understand <strong>geometry, semantics, materials, and human activities</strong> in challenging real-world environments, with applications in <strong>robotics, health monitoring, smart homes, and human-centered computing</strong>.",
+      "More broadly, I am also interested in <strong>LLMs, SLAM, localization, 3D reconstruction, imaging, segmentation, and detection</strong>."
     ],
     featuredResearch: ["holoradar", "cartoradar", "panoradar"],
     mediaCoverage: [

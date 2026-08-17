@@ -20,6 +20,7 @@ Object.assign(window.SITE_DATA, {
       links: [
         { label: "PDF", href: "https://dl.acm.org/doi/10.1145/3745756.3809241" },
         { label: "Demo", href: "https://www.youtube.com/watch?v=k31nKDRhJJw" },
+        { label: "Presentation", href: "https://www.youtube.com/watch?v=vLT9U1BNfMY" },
       ],
       abstract:
         "Digital twins today are almost entirely visual, overlooking acoustics -- a core component of spatial realism and interaction. We introduce AV-Twin, the first practical system that constructs editable audio-visual digital twins using only commodity smartphones. AV-Twin combines mobile RIR capture and a visual-assisted acoustic field model to efficiently reconstruct room acoustics. It further recovers per-surface material properties through differentiable acoustic rendering, enabling users to modify materials, geometry, and layout while automatically updating both audio and visuals. Together, these capabilities establish a practical path toward fully modifiable audio-visual digital twins for real-world environments.",
@@ -47,6 +48,7 @@ Object.assign(window.SITE_DATA, {
       highlights: [],
       links: [
         { label: "PDF", href: "https://dl.acm.org/doi/10.1145/3745756.3809230" },
+        { label: "Presentation", href: "https://www.youtube.com/watch?v=mSeRFkYV51Q" },
       ],
       abstract:
         "This paper presents SurfRadar, a fully automatic mmWave system for in-the-wild surface characterization. SurfRadar operates on a mobile robot and estimates intrinsic surface properties including dielectric constant and roughness. Central to our approach is leveraging high-resolution imaging and analyzing coherent surface reflection images rather than raw radar signals. We develop a physics-based model that connects material parameters to these images. Through forward synthesis and backward optimization, SurfRadar recovers the intrinsic parameters that best explain the observed reflection profile. Our results demonstrate accurate characterization across 11 surface types, the ability to produce scene-level semantic maps, and applicability to other datasets.",
@@ -75,6 +77,7 @@ Object.assign(window.SITE_DATA, {
         { label: "PDF", href: "https://proceedings.neurips.cc/paper_files/paper/2025/hash/6994a52f9499b865b7c9e167f5495ef3-Abstract-Conference.html" },
         { label: "Project", href: "https://waves.seas.upenn.edu/projects/holoradar" },
         { label: "Demo", href: "https://www.youtube.com/watch?v=x3jx1REd_xM" },
+        { label: "Presentation", href: "https://www.youtube.com/watch?v=Zz9P0MAJ_mY" },
       ],
       abstract:
         "Seeing hidden structures and objects around corners is critical for robots operating in complex, cluttered environments. We present HoloRadar, a practical system that reconstructs both line-of-sight and non-line-of-sight 3D scenes using a single mmWave radar. HoloRadar uses a two-stage pipeline: the first stage generates high-resolution multi-return range images that capture both line-of-sight and non-line-of-sight reflections, and the second stage reconstructs the physical scene by mapping mirrored observations to their true locations using a physics-guided architecture that models ray interactions. We deploy HoloRadar on a mobile robot and evaluate it across diverse real-world environments. Our results demonstrate accurate and robust reconstruction in both visible and hidden regions.",
@@ -103,6 +106,7 @@ Object.assign(window.SITE_DATA, {
         { label: "PDF", href: "https://dl.acm.org/doi/10.1145/3680207.3723467" },
         { label: "Project", href: "https://waves.seas.upenn.edu/projects/cartoradar" },
         { label: "Demo", href: "https://www.youtube.com/watch?v=WRiaRZXQ4gM" },
+        { label: "Presentation", href: "https://www.youtube.com/watch?v=y2XpAt46kYs" },
         { label: "Code", href: "https://github.com/penn-waves-lab/CartoRadar" },
         { label: "Dataset", href: "https://upenn.box.com/v/cartoradar-dataset" },
       ],
@@ -470,7 +474,7 @@ Object.assign(window.SITE_DATA, {
         { name: "Yifei Liu" },
         { name: "Haowen Lai", me: true },
       ],
-      note: "US Patent Application 63/626,860, filed Jan. 2024. Patent pending.",
+      note: "US Patent US20260219387A1, issued Jul. 2026",
     },
     {
       id: "patentGlobalRegistration2024",

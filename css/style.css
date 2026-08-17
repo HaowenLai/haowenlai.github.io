@@ -734,6 +734,25 @@ details pre {
   margin-top: 10px;
 }
 
+.presentation-entry {
+  display: grid;
+  gap: 3px;
+}
+
+.presentation-entry__meta {
+  color: var(--accent);
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.presentation-entry__title {
+  color: inherit;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .patent-item {
   padding-left: 0.25rem;
 }

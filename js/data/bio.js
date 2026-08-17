@@ -3,8 +3,8 @@ Object.assign(window.SITE_DATA, {
   bio: {
     education: [
       `Ph.D. in Computer Science, <a href="https://www.cis.upenn.edu/"><strong>University of Pennsylvania</strong></a>, Philadelphia, USA, 2022 - present`,
-      `M.S. in Electrical Engineering, <a href="https://www.tsinghua.edu.cn/en/"><strong>Tsinghua University</strong></a>, Beijing, China, 2019 - 2022`,
-      `B.E. in Electrical Engineering, <a href="https://en.tongji.edu.cn/"><strong>Tongji University</strong></a>, Shanghai, China, 2015 - 2019 (Top 1/79)`,
+      `M.S. in Automation, <a href="https://www.tsinghua.edu.cn/en/"><strong>Tsinghua University</strong></a>, Beijing, China, 2019 - 2022`,
+      `B.E. in Automation, <a href="https://en.tongji.edu.cn/"><strong>Tongji University</strong></a>, Shanghai, China, 2015 - 2019 (Top 1/79)`,
     ],
     awards: [
       "ACM MobiCom Best Artifact Award, 2025",
@@ -80,22 +80,17 @@ Object.assign(window.SITE_DATA, {
           "Development of tools and datasets",
         ],
       },
-    ],
-    service: [
       {
-        title: "Student Service",
-        meta: "Sept. 2020 - Jan. 2021",
-        items: ["Vice president of the Graduate Students' Union of the Department of Automation."],
-      },
-      {
-        title: "Tutoring",
-        meta: "Sept. 2017 - Jan. 2018",
-        items: ["Curriculum tutoring for underrepresented undergraduate students."],
-      },
-      {
-        title: "Student Service",
-        meta: "Oct. 2016 - Jun. 2017",
-        items: ["Member of the Innovation Club. Assisted with two contests."],
+        title: "Presentations, Posters & Demos",
+        items: [
+          `<span class="presentation-entry"><span>Real-time Demo at Google H&amp;H Intern Showcase</span><span class="presentation-entry__meta">Mountain View, CA, USA; Aug. 2026</span><cite class="presentation-entry__title">Radar Foundation Models</cite></span>`,
+          `<span class="presentation-entry"><span>Video Recording Presentation at ACM MobiSys</span><span class="presentation-entry__meta">Cambridge, UK; Jun. 2026</span><cite class="presentation-entry__title">Surface Characterization with mmWave Signals</cite></span>`,
+          `<span class="presentation-entry"><span>Poster Presentation at NeurIPS</span><span class="presentation-entry__meta">San Diego, CA, USA; Dec. 2025</span><cite class="presentation-entry__title">Non-Line-of-Sight 3D Reconstruction with Radar</cite></span>`,
+          `<span class="presentation-entry"><span>Oral Presentation &amp; Demo at ACM MobiCom</span><span class="presentation-entry__meta">Washington, D.C., USA; Nov. 2024</span><cite class="presentation-entry__title">Enabling Visual Recognition at Radio Frequency</cite></span>`,
+          `<span class="presentation-entry"><span>Remote Presentation at IEEE Conference on Decision and Control</span><span class="presentation-entry__meta">Austin, TX, USA; Dec. 2021</span><cite class="presentation-entry__title">Reach-Avoid Differential Games via Finite-Time Heading Tracking</cite></span>`,
+          `<span class="presentation-entry"><span>Oral Presentation at IEEE Chinese Control Conference</span><span class="presentation-entry__meta">Shanghai, China; Jul. 2021</span><cite class="presentation-entry__title">LiDAR-Inertial based Localization and Perception for Indoor Pursuit-Evasion Differential Games</cite></span>`,
+          `<span class="presentation-entry"><span>Oral Presentation at IEEE CASE</span><span class="presentation-entry__meta">Vancouver, Canada; Aug. 2019</span><cite class="presentation-entry__title">A Novel Scale Recognition Method for Pointer Meters Adapted to Different Types and Shapes</cite></span>`,
+        ],
       },
     ],
   },
