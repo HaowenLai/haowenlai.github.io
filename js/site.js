@@ -31,6 +31,7 @@ const PAGE_SECTION_NAV = {
   media: [
     { id: "demo-videos", label: "Demo Videos" },
     { id: "presentations-talks", label: "Presentations & Talks" },
+    { id: "photos", label: "Photos" },
   ],
 };
 
@@ -573,6 +574,30 @@ function renderMediaPage() {
           .join("")}
       </div>
     </section>
+    <section class="content-section" id="photos">
+      ${renderSectionHeader("Photos")}
+      <div class="media-grid media-grid--photos">
+        ${media.photos
+          .map(
+            (item, index) => `
+              <figure class="media-card media-card--photo">
+                <button class="media-card__photo" type="button" data-photo-index="${index}"
+                  aria-label="Enlarge photo: ${item.alt}" aria-haspopup="dialog" aria-controls="photo-lightbox">
+                  <img src="${item.src}" alt="${item.alt}" loading="lazy" decoding="async">
+                </button>
+                <figcaption>${item.caption}</figcaption>
+              </figure>
+            `,
+          )
+          .join("")}
+      </div>
+    </section>
+    <dialog class="photo-lightbox" id="photo-lightbox" aria-label="Expanded photo" aria-describedby="photo-lightbox-caption">
+      <figure>
+        <img class="photo-lightbox__image" alt="">
+        <figcaption id="photo-lightbox-caption"></figcaption>
+      </figure>
+    </dialog>
   `;
 }
 
@@ -649,6 +674,37 @@ function renderApp() {
       sectionToggle.setAttribute("aria-expanded", String(!isExpanded));
     });
   });
+
+  const photoLightbox = root.querySelector(".photo-lightbox");
+  if (photoLightbox) {
+    const image = photoLightbox.querySelector(".photo-lightbox__image");
+    const caption = photoLightbox.querySelector("figcaption");
+
+    root.querySelectorAll(".media-card__photo").forEach((photoButton) => {
+      photoButton.addEventListener("click", () => {
+        const photo = window.SITE_DATA.media.photos[Number(photoButton.dataset.photoIndex)];
+        image.src = photo.src;
+        image.alt = photo.alt;
+        caption.textContent = photo.caption;
+        photoLightbox.showModal();
+        document.body.classList.add("has-photo-lightbox");
+      });
+    });
+
+    photoLightbox.addEventListener("click", (event) => {
+      const bounds = photoLightbox.getBoundingClientRect();
+      if (event.target === photoLightbox && (
+        event.clientX < bounds.left || event.clientX > bounds.right ||
+        event.clientY < bounds.top || event.clientY > bounds.bottom
+      )) {
+        photoLightbox.close();
+      }
+    });
+
+    photoLightbox.addEventListener("close", () => {
+      document.body.classList.remove("has-photo-lightbox");
+    });
+  }
 
   const toggle = root.querySelector(".timeline-toggle");
   if (toggle) {

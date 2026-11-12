@@ -42,6 +42,10 @@ Object.assign(window.SITE_DATA, {
   },
   news: [
     {
+      date: "Sept. 2026",
+      html: `Our paper <strong>Acoustic Inverse Rendering for Room Reconstruction</strong> was accepted to <a href="https://neurips.cc/Conferences/2026">NeurIPS 2026</a>.`,
+    },
+    {
       date: "May 2026",
       html: `Very excited to spend the summer at <strong>Google</strong> as a Research Intern. See you in Mountain View!`,
     },

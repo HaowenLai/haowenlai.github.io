@@ -27,6 +27,28 @@ Object.assign(window.SITE_DATA, {
         caption: "Visual recognition at radio frequency with high-resolution RF imaging",
       },
     ],
+    photos: [
+      {
+        src: "images/media/mobicom24_demo.jpg",
+        alt: "PanoRadar Best Demo Award at ACM MobiCom 2024",
+        caption: "Our paper PanoRadar won the Best Demo Award in ACM MobiCom 2024.",
+      },
+      {
+        src: "images/media/mobicom24_src.jpg",
+        alt: "Student Research Competition award at ACM MobiCom 2024",
+        caption: "I won the first place in the Student Research Competition (SRC) at ACM MobiCom 2024",
+      },
+      {
+        src: "images/media/neurips25.jpg",
+        alt: "Presenting HoloRadar at NeurIPS 2025",
+        caption: "I presented our work HoloRadar at NeurIPS 2025",
+      },
+      {
+        src: "images/media/upenn_awards.jpg",
+        alt: "A wall of awards in the lab",
+        caption: "There is a wall full of my awards in the lab.",
+      },
+    ],
     presentationsTalks: [
       {
         title: "MobiSys 2026 Video Recording",

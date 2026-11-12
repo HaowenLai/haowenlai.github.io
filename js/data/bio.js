@@ -36,6 +36,12 @@ Object.assign(window.SITE_DATA, {
       {
         course: "CIS 3990: Mobile and IoT Computing",
         role: "Teaching Assistant",
+        term: "Fall 2026",
+        institution: "University of Pennsylvania",
+      },
+      {
+        course: "CIS 3990: Mobile and IoT Computing",
+        role: "Teaching Assistant",
         term: "Spring 2024",
         institution: "University of Pennsylvania",
       },
@@ -69,6 +75,7 @@ Object.assign(window.SITE_DATA, {
           `<a href="https://www.ieee-ras.org/publications/t-ase">IEEE Transactions on Automation Science and Engineering (T-ASE)</a>`,
           `<a href="https://www.ieeecss.org/publication/transactions-control-systems-technology">IEEE Transactions on Control Systems Technology (TCST)</a>`,
           `<a href="https://www.ieee-ras.org/publications/ra-l">IEEE Robotics and Automation Letters (RA-L)</a>`,
+          `<a href="https://www.ieee-ies.org/pubs/transactions-on-industrial-informatics">IEEE Transactions on Industrial Informatics (TII)</a>`,
           `<a href="https://www.sciencedirect.com/journal/measurement">Elsevier Measurement</a>`,
         ],
       },

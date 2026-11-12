@@ -2,6 +2,55 @@
 Object.assign(window.SITE_DATA, {
   publications: [
     {
+      slug: "textradar",
+      title: "3D Occupancy-Language Fields from mmWave Radar",
+      image: "images/paper/textradar.png",
+      imageAlt: "textradar paper figure",
+      authors: [
+        { name: "Haowen Lai", me: true },
+        { name: "Zhiwei Zheng" },
+        { name: "Mingmin Zhao" },
+      ],
+      venueShort: "arXiv",
+      venueLong: "In submission",
+      highlights: [],
+      links: [
+        { label: "PDF", href: "https://arxiv.org/abs/2610.37929" },
+      ],
+      abstract:
+        "Radar systems can recover scene geometry and recognize predefined categories, but these outputs do not provide a persistent spatial representation for open-ended language queries. Such queries require linking observations from different viewpoints to the same physical locations. We present TextRadar, a framework that constructs a scene-level 3D occupancy-language field from panoramic radar observations. The field combines occupancy with scale-dependent language features at surface locations, allowing the reconstructed scene to be queried with new descriptions. A single-frame radar distillation model predicts aligned ranges and language features from each radar observation. Using radar-estimated poses, we register these predictions to reconstruct the field from radar alone in a new scene. Experiments on approximately 20k synchronized observations across seven buildings demonstrate scene-level natural-language querying and prompt-free semantic visualization. Analysis of camera-to-radar concept transferability shows stronger agreement for structures, materials, and human poses than for colors and printed text.",
+      bibtex: `@inproceedings{}`,
+    },
+    {
+      slug: "depthRIR",
+      title: "Acoustic Inverse Rendering for Room Reconstruction",
+      image: "images/paper/depthRIR.png",
+      imageAlt: "depthRIR paper figure",
+      authors: [
+        { name: "Yiduo Hao" },
+        { name: "Yiwei Tang" },
+        { name: "Jiayang Li" },
+        { name: "Zitong Lan" },
+        { name: "Haowen Lai", me: true },
+        { name: "Romit Roy Choudhury" },
+        { name: "Mingmin Zhao" },
+      ],
+      venueShort: "NeurIPS 2026",
+      venueLong: "Annual Conference on Neural Information Processing Systems",
+      highlights: [],
+      links: [
+      ],
+      abstract:
+        "A room impulse response (RIR) encodes how sound reflects, scatters, and decays inside a room, and therefore carries information about what the room looks like and what it is made of. We formalize this observation as Acoustic Inverse Rendering (AIR): recovering dense panoramic geometry, the depth image, and acoustic reflectance of a scene directly from its RIR. The task is challenging as the RIR renders all spatial propagation paths as a single temporal signal, and the resulting inverse mapping is severely ambiguous. AIR closes this gap by projecting the RIR onto the equirectangular grid and conditioning a diffusion model on the resulting directional features, yielding a distribution over plausible scenes rather than a single point estimate. The same spherical beamforming applies to first-order Ambisonics (FOA), binaural, and mono microphone setups. AIR produces coherent panoramic depth images from acoustic input alone, outperforming prior baselines on this inverse problem.",
+      bibtex: `@inproceedings{depthRIR,
+  title={Acoustic Inverse Rendering for Room Reconstruction},
+  author={Hao, Yiduo and Tang, Yiwei and Li, Jiayang and Lan, Zitong and Lai, Haowen and Choudhury, Romit and Zhao, Mingmin},
+  booktitle={Annual Conference on Neural Information Processing Systems (NeurIPS)},
+  pages = {},
+  year={2026}
+}`,
+    },
+    {
       slug: "avtwin",
       title: "Building Audio-Visual Digital Twins with Smartphones",
       image: "images/paper/avtwin.png",
@@ -19,6 +68,7 @@ Object.assign(window.SITE_DATA, {
       highlights: [],
       links: [
         { label: "PDF", href: "https://dl.acm.org/doi/10.1145/3745756.3809241" },
+        { label: "Project", href: "https://waves.seas.upenn.edu/projects/av-twin" },
         { label: "Demo", href: "https://www.youtube.com/watch?v=k31nKDRhJJw" },
         { label: "Presentation", href: "https://www.youtube.com/watch?v=vLT9U1BNfMY" },
       ],
@@ -48,6 +98,7 @@ Object.assign(window.SITE_DATA, {
       highlights: [],
       links: [
         { label: "PDF", href: "https://dl.acm.org/doi/10.1145/3745756.3809230" },
+        { label: "Project", href: "https://waves.seas.upenn.edu/projects/surfradar" },
         { label: "Presentation", href: "https://www.youtube.com/watch?v=mSeRFkYV51Q" },
       ],
       abstract:

@@ -5,7 +5,7 @@ window.SITE_DATA = {
     email: "hwlai@seas.upenn.edu",
     role: "Ph.D. Student",
     department: {
-      label: "Department of Computer and Information Science",
+      label: "Computer and Information Science",
       href: "https://www.cis.upenn.edu/",
     },
     institution: {
@@ -18,7 +18,7 @@ window.SITE_DATA = {
       src: "images/self.png",
       alt: "Portrait of Haowen Lai",
     },
-    lastUpdated: "Aug. 16, 2026",
+    lastUpdated: "Nov. 11, 2026",
     footerYear: "2026",
     links: [
       { label: "CV", href: "docs/CV-Haowen Lai.pdf" },
